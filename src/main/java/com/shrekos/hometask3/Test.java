@@ -1,4 +1,5 @@
 package com.shrekos.hometask3;
+//resolved
 
 public class Test {
     public static boolean test (String input) {

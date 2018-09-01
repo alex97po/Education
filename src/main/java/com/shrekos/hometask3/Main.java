@@ -1,4 +1,5 @@
 package com.shrekos.hometask3;
+//resolved
 
 import java.util.Scanner;
 
