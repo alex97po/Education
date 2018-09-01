@@ -8,7 +8,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.print("Print a number: ");
         int input_number = in.nextInt();
-        int [] test = Odd.odd(input_number);
+        int[] test = Odd.odd(input_number);
         System.out.println("Odd numbers: " + Arrays.toString(test));
     }
 
