@@ -1,4 +1,4 @@
-/*package com.shrekos.kata3;
+package com.shrekos.kata3;
 
 import java.util.Scanner;
 
@@ -9,4 +9,4 @@ public class Main {
         String inputString = sc.nextLine();
         System.out.println(Decimal.toDecimal(BinaryArray.binaryArray(inputString)));
     }
-}*/
+}
