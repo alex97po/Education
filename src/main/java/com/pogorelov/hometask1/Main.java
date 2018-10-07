@@ -1,12 +1,11 @@
 package com.pogorelov.hometask1;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Print word 'Hello': ");
-        String part1 = scanner.nextLine();
+        Model model = new Model();
+        Viewer view = new Viewer();
+        Controller controller = new Controller(model, view);
+        controller.runner();
 
     }
 
