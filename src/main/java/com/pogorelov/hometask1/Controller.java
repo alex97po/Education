@@ -2,9 +2,9 @@ package com.pogorelov.hometask1;
 
 public class Controller {
     private Model model;
-    private Viewer view;
+    private View view;
 
-    public Controller(Model model, Viewer view) {
+    public Controller(Model model, View view) {
         this.model = model;
         this.view = view;
     }
