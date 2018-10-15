@@ -44,6 +44,11 @@ public class MoreOrLess {
     public static int inputNumber () {
         Scanner scanner = new Scanner(System.in);
         System.out.print(View.GUESS_NUMBER);
+        while (!scanner.hasNextInt()) {
+            System.out.println(View.WRONG_INPUT);
+            System.out.print(View.GUESS_NUMBER);
+            scanner.nextLine();
+        }
         int input = scanner.nextInt();
         return input;
     }

@@ -6,7 +6,7 @@ public class View {
     public static final String MORE_THAN_NEEDED = "Correct number is less than your guess!";
     public static final String LESS_THAN_NEEDED = "Correct number is more than your guess! ";
     public static final String RANGE = "...x...";
-    public static final String WRONG_INPUT = "Bad shot! Yoy have already narrowed your search range!";
+    public static final String WRONG_INPUT = "Wrong input data!";
 
     public static void output (int result) {
         System.out.println(CORRECT_ANSWER + result);
