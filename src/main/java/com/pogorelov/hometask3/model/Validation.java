@@ -30,7 +30,7 @@ public class Validation {
         String value = scanner.nextLine();
         while (!(value.matches(regex))) {
             view.showWrongInput();
-            value = scanner.next();
+            value = scanner.nextLine();
         }
         return value;
     }
