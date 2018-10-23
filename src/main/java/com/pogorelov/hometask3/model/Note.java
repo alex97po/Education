@@ -25,5 +25,10 @@ public class Note {
     private String dateOfCreation;
     private String dateOfChange;
 
-
+    public void setLoginToEnum() throws NotUniqueLoginException {
+        DataBaseWithEnum.Note1.setLogin(nickName);
+        DataBaseWithEnum.Note2.setLogin(nickName);
+        DataBaseWithEnum.Note3.setLogin(nickName);
+        DataBaseWithEnum.Note4.setLogin(nickName);
+    }
 }

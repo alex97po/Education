@@ -1,5 +1,6 @@
 package com.pogorelov.hometask3.controller;
 
+import com.pogorelov.hometask3.model.NotUniqueLoginException;
 import com.pogorelov.hometask3.model.Note;
 import com.pogorelov.hometask3.model.Service;
 import com.pogorelov.hometask3.model.Validation;
@@ -20,5 +21,16 @@ public class Controller {
         Scanner scanner = new Scanner(System.in);
         Service tempNotebook = new Service(model, view, new Validation(view, scanner));
         tempNotebook.saveDataToModel();
+    }
+
+    boolean sameLogin = true;
+        while(sameLogin) {
+        try {
+            model.setLoginToEnum();
+            sameLogin = false;
+        } catch (NotUniqueLoginException e) {
+            view.showMessage(e.getMessage());
+            Service.saveDataToModel();
+        }
     }
 }
