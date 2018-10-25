@@ -10,6 +10,7 @@ public class View {
     public static final String ZERO_ELEMENTS = "Amount of 0 in the array is ";
     public static final String ABOVE_ZERO_ELEMENTS = "Amount of elements above 0 in the array is ";
     public static final String MULTIPLIED_ARRAY = "After mulpiplying the array with the index defined above, new array is: ";
+    public static final String WRONG_INPUT = "Wrong input format!";
 
 
     public static void inputArrayLength () {

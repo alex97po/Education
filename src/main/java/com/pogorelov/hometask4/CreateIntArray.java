@@ -9,8 +9,19 @@ public class CreateIntArray {
     public static void inputNecessaryData() {
         Scanner scanner = new Scanner(System.in);
         View.inputArrayLength();
+        while (!scanner.hasNextInt()) {
+            System.out.println(View.WRONG_INPUT);
+            View.inputArrayLength();
+            scanner.nextLine();
+        }
         arrayLength = scanner.nextInt();
+
         View.inputMultiplyingIndex();
+        while (!scanner.hasNextInt()) {
+            System.out.println(View.WRONG_INPUT);
+            View.inputMultiplyingIndex();
+            scanner.nextLine();
+        }
         index = scanner.nextInt();
     }
 
@@ -22,4 +33,5 @@ public class CreateIntArray {
        }
         return array;
     }
+
 }
