@@ -21,7 +21,6 @@ public class Controller {
         Scanner scanner = new Scanner(System.in);
         Service tempNotebook = new Service(model, view, new Validation(view, scanner));
         tempNotebook.saveDataToModel();
-    }
 
     boolean sameLogin = true;
         while(sameLogin) {
@@ -30,7 +29,8 @@ public class Controller {
             sameLogin = false;
         } catch (NotUniqueLoginException e) {
             view.showMessage(e.getMessage());
-            Service.saveDataToModel();
+           tempNotebook.saveDataToModel();
         }
+    }
     }
 }
