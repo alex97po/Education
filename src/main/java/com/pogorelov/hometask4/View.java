@@ -13,11 +13,11 @@ public class View {
     public static final String WRONG_INPUT = "Wrong input format!";
 
 
-    public static void inputArrayLength () {
+    public static void inputArrayLength() {
         System.out.print(INPUT_ARRAY_LENGTH);
     }
 
-    public static void inputMultiplyingIndex () {
+    public static void inputMultiplyingIndex() {
         System.out.print(INDEX_OF_MULTIPLYING);
     }
 }

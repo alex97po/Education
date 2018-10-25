@@ -26,11 +26,11 @@ public class CreateIntArray {
     }
 
 
-    public static int [] createIntArray () {
-       int [] array = new int[arrayLength];
-       for (int arrayIndex : array) {
-            array [arrayIndex] = (int) (Math.random() * 100);
-       }
+    public static int[] createIntArray() {
+        int[] array = new int[arrayLength];
+        for (int arrayIndex : array) {
+            array[arrayIndex] = (int) (Math.random() * 100-30);
+        }
         return array;
     }
 
