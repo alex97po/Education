@@ -10,4 +10,7 @@ import lombok.Setter;
 class Incomes {
     static double SalaryFromMainJob;
     static double SalaryFromAdditionalJob;
+    static double Remunerations;
+    static double PropertySale;
+
 }
