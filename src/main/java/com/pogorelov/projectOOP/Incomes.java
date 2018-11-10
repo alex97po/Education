@@ -1,16 +1,21 @@
 package com.pogorelov.projectOOP;
 
+import java.math.BigDecimal;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
-@Setter
 @Getter
-class Incomes {
-    static double SalaryFromMainJob;
-    static double SalaryFromAdditionalJob;
-    static double Remunerations;
-    static double PropertySale;
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+public class Incomes {
+    private BigDecimal salaryFromMainJob;
+    private BigDecimal salaryFromAdditionalJob;
+    private BigDecimal remunerations;
+    private BigDecimal propertySale;
+
 
 }

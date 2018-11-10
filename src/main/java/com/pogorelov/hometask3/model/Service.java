@@ -36,6 +36,7 @@ public class Service {
 
     public void saveDataToModel() {
         saveInputData();
+
         model.setName(name);
         model.setSurname(surname);
         model.setPatronymic(patronymic);

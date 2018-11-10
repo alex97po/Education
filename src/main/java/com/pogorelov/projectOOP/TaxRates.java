@@ -1,8 +1,16 @@
 package com.pogorelov.projectOOP;
 
-public class TaxRates {
-    static double taxOnSalary = 0.18; //18%
-    static double taxOnRemunerations = 0.18;
-    static double taxOnPropertySale = 0.18;
+import java.math.BigDecimal;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+public enum TaxRates {
+    TAX_ON_SALARY(BigDecimal.valueOf(0.18)), //18%
+    TAX_ON_REMUNERATIONS(BigDecimal.valueOf(0.18)),
+    TAX_ON_PROPERTY_SALE(BigDecimal.valueOf(0.18));
+
+    BigDecimal percent;
 }
