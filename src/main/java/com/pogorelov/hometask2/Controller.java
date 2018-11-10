@@ -1,16 +1,17 @@
-package com.pogorelov.hometask1;
+package com.pogorelov.hometask2;
 
 public class Controller {
-    private Model model;
+    private MoreOrLess model;
     private View view;
 
-    public Controller(Model model, View view) {
+    public Controller(MoreOrLess model, View view) {
         this.model = model;
         this.view = view;
     }
 
     public void runner() {
-        String result = model.add();
+        int result = model.moreless();
         view.output(result);
     }
 }
+
