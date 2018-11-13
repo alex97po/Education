@@ -1,16 +1,25 @@
 package com.pogorelov.hometask5;
 
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class ArrayListStatistics {
-    public static void arrayListStatistics () {
-        Scanner scanner = new Scanner(System.in);
-        int arraySize = scanner.nextInt();
-        ArrayList<Integer> arrayList = new ArrayList<>(arraySize);
-        for (int i = 0; i<arraySize; i++) {
-            arrayList.add((int)(Math.random()*100-30));
-        }
+    public static void main(String[] args) {
+        Random random = new Random();
+        ArrayList<Integer> arrayList = IntStream.generate(() -> random.nextInt(10))
+                .limit(10)
+                .boxed()
+                .collect(Collectors.toCollection(ArrayList::new));
+
+        System.out.println("array: \n" + Arrays.toString(arrayList.toArray()));
+
+        System.out.println("number of repetitions:\n" + arrayList.stream()
+                .collect(Collectors.groupingBy(x -> x,
+                        Collectors.counting())).toString());
+
+
     }
 }
